@@ -1,6 +1,8 @@
+import { MetaMaskInpageProvider } from '@metamask/providers'
+
 declare global {
   export interface Window {
-    foo: number
+    ethereum?: MetaMaskInpageProvider
   }
 }
 export {}
